@@ -24,11 +24,13 @@ ubuntu-lxd-playbook
     $ lxd-images import lxc ubuntu vivid amd64 --alias ubuntu-vivid
     ````````````````````````````````````````````````````````````
 
-- fedora20
+- Fedora20
 
     ````````````````````````````````````````````````````````````
-    $ lxd-images import lxc fedora 20 amd64 --alias fedora20
+    $ wget https://images.linuxcontainers.org/images/fedora/20/amd64/default/20150619_01:27/lxd.tar.xz
+    $ lxc image import lxd.tar.xz --alias fedora20
     ````````````````````````````````````````````````````````````
+
 
 - CentOS6
 
@@ -39,7 +41,8 @@ ubuntu-lxd-playbook
 - CentOS7
 
     ````````````````````````````````````````````````````````````
-    $ lxd-images import lxc centos 7 amd64 --alias centos7
+    $ wget https://images.linuxcontainers.org/images/centos/7/amd64/default/20150619_02:16/lxd.tar.xz
+    $ lxc image import lxd.tar.xz --alias centos7
     ````````````````````````````````````````````````````````````
 
 ### イメージの起動方法
